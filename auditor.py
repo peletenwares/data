@@ -1,52 +1,25 @@
-import argparse
-import concurrent.futures
+﻿import concurrent.futures
 import datetime
 import json
-import os
-import shutil
 import urllib.parse
 
 import requests
 
 HEADERS = {'User-Agent': 'Channels-Auditor/1.0'}
 TIMEOUT = 10
-MAX_WORKERS = 1
-CHANNELS_FILE = 'channels.json'
-AUDITED_FILE = 'channels_audited.json'
-HISTORY_DIR = 'history'
-REPORTS_DIR = 'reports'
+MAX_WORKERS = 20
+OUTPUT_REPORT = 'audit-report.json'
+OUTPUT_CLEAN = 'channels_clean.json'
+OUTPUT_FAILED = 'channels_failed.json'
 
 
-def get_timestamp():
-    return datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace(':', '-').replace('T', 'T')
-
-
-def ensure_dirs():
-    os.makedirs(HISTORY_DIR, exist_ok=True)
-    os.makedirs(REPORTS_DIR, exist_ok=True)
-
-
-def backup_channels():
-    timestamp = get_timestamp()
-    backup_path = os.path.join(HISTORY_DIR, f'channels_{timestamp}_backup.json')
-    shutil.copy2(CHANNELS_FILE, backup_path)
-    return backup_path
-
-
-def load_channels():
-    if not os.path.exists(CHANNELS_FILE):
-        return []
-    with open(CHANNELS_FILE, 'r', encoding='utf-8') as source:
+def load_channels(path='channels.json'):
+    with open(path, 'r', encoding='utf-8') as source:
         return json.load(source)
 
 
-def save_channels(channels, path):
-    with open(path, 'w', encoding='utf-8') as output:
-        json.dump(channels, output, indent=2, ensure_ascii=False)
-
-
 def now_isoz():
-    return datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat() + 'Z'
+    return datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
 
 
 def find_variant_uris(manifest_text):
@@ -114,68 +87,42 @@ def validate_hls_manifest(base_url, manifest_text, depth=0):
 def audit_channel(channel):
     checked_at = now_isoz()
     result = dict(channel)
-    result['lastCheckedAt'] = checked_at
+    result['checkedAt'] = checked_at
 
     stream_url = channel.get('streamUrl')
     if not stream_url:
-        result['auditStatus'] = 'inactive'
-        result['lastAuditReason'] = 'streamUrl ausente'
-        result['failCount'] = result.get('failCount', 0) + 1
+        result['auditStatus'] = 'failed'
+        result['auditReason'] = 'streamUrl ausente'
         return result
 
     try:
         response = requests.get(stream_url, headers=HEADERS, timeout=TIMEOUT)
         if not 200 <= response.status_code < 300:
-            result['auditStatus'] = 'inactive'
-            result['lastAuditReason'] = f'HTTP {response.status_code}'
-            result['failCount'] = result.get('failCount', 0) + 1
+            result['auditStatus'] = 'failed'
+            result['auditReason'] = f'HTTP {response.status_code}'
             return result
 
         manifest_text = response.text
-        if '#EXTM3U' not in manifest_text:
-            result['auditStatus'] = 'inactive'
-            result['lastAuditReason'] = 'Respuesta no contiene #EXTM3U'
-            result['failCount'] = result.get('failCount', 0) + 1
+        valid, reason = validate_hls_manifest(stream_url, manifest_text)
+        if not valid:
+            result['auditStatus'] = 'failed'
+            result['auditReason'] = reason
             return result
 
-        # Simplified validation
-        result['auditStatus'] = 'active'
-        result['lastAuditReason'] = None
-        result['failCount'] = 0
+        result['auditStatus'] = 'working'
+        return result
+    except requests.RequestException as exc:
+        result['auditStatus'] = 'failed'
+        result['auditReason'] = str(exc)
         return result
     except Exception as exc:
-        result['auditStatus'] = 'inactive'
-        result['lastAuditReason'] = str(exc)
-        result['failCount'] = result.get('failCount', 0) + 1
+        result['auditStatus'] = 'failed'
+        result['auditReason'] = f'Error de validación: {exc}'
         return result
-
-
-def update_status_based_on_fail_count(channel):
-    fail_count = channel.get('failCount', 0)
-    if fail_count >= 3:
-        channel['auditStatus'] = 'inactive'
-    elif fail_count >= 1:
-        channel['auditStatus'] = 'suspect'
-    else:
-        channel['auditStatus'] = 'active'
-    return channel
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(description='Auditor de canales HLS')
-    parser.add_argument('--limit', type=int, default=0, help='Número máximo de canales a auditar')
-    return parser.parse_args()
 
 
 def main():
-    args = parse_args()
-    ensure_dirs()
-    backup_path = backup_channels()
-    print(f'Backup creado: {backup_path}')
-
     channels = load_channels()
-    if args.limit and args.limit > 0:
-        channels = channels[: args.limit]
     print(f'Iniciando auditoría de {len(channels)} canales...')
 
     audited = []
@@ -184,45 +131,29 @@ def main():
         for future in concurrent.futures.as_completed(futures):
             audited.append(future.result())
 
-    # Aplicar lógica de estados basada en failCount
-    for channel in audited:
-        update_status_based_on_fail_count(channel)
+    clean = [item for item in audited if item['auditStatus'] == 'working']
+    failed = [item for item in audited if item['auditStatus'] != 'working']
 
-    # Filtrar working y failed
-    working = [item for item in audited if item['auditStatus'] == 'active']
-    failed = [item for item in audited if item['auditStatus'] in ('suspect', 'inactive')]
+    with open(OUTPUT_REPORT, 'w', encoding='utf-8') as output:
+        json.dump(audited, output, indent=2, ensure_ascii=False)
 
-    # Guardar channels_audited.json
-    save_channels(audited, AUDITED_FILE)
+    with open(OUTPUT_CLEAN, 'w', encoding='utf-8') as output:
+        json.dump(clean, output, indent=2, ensure_ascii=False)
 
-    # Guardar reportes con timestamp
-    timestamp = get_timestamp()
-    audit_report_path = os.path.join(REPORTS_DIR, f'audit_report_{timestamp}.json')
-    failed_report_path = os.path.join(REPORTS_DIR, f'channels_failed_{timestamp}.json')
-    working_report_path = os.path.join(REPORTS_DIR, f'channels_working_{timestamp}.json')
-
-    save_channels(audited, audit_report_path)
-    save_channels(failed, failed_report_path)
-    save_channels(working, working_report_path)
+    with open(OUTPUT_FAILED, 'w', encoding='utf-8') as output:
+        json.dump(failed, output, indent=2, ensure_ascii=False)
 
     total = len(audited)
-    active = len(working)
-    suspect = len([c for c in audited if c['auditStatus'] == 'suspect'])
-    inactive = len([c for c in audited if c['auditStatus'] == 'inactive'])
-    percent_active = (active / total * 100) if total else 0.0
+    working = len(clean)
+    failed_count = len(failed)
+    percent = (working / total * 100) if total else 0.0
 
     print('Auditoría completada.')
     print(f'Total: {total}')
-    print(f'Active: {active}')
-    print(f'Suspect: {suspect}')
-    print(f'Inactive: {inactive}')
-    print(f'Porcentaje active: {percent_active:.2f}%')
-    print(f'Archivos generados:')
-    print(f'  {AUDITED_FILE} (para revisión manual)')
-    print(f'  {audit_report_path}')
-    print(f'  {failed_report_path}')
-    print(f'  {working_report_path}')
-    print(f'  {backup_path}')
+    print(f'Working: {working}')
+    print(f'Failed: {failed_count}')
+    print(f'Porcentaje working: {percent:.2f}%')
+    print(f'Reportes generados: {OUTPUT_REPORT}, {OUTPUT_CLEAN}, {OUTPUT_FAILED}')
 
 
 if __name__ == '__main__':
