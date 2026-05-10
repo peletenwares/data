@@ -1343,6 +1343,30 @@
     "checkedAt": "2026-05-02T23:53:33Z",
     "auditStatus": "working"
   },
+   {
+    "id": "record-news-espirito-santo-br",
+    "name": "Record News Espirito Santo",
+    "country": "Brasil",
+    "countryCode": "BR",
+    "logo": "https://lh3.googleusercontent.com/-bl7c8pVKGa0/X0EUnSfcZrI/AAAAAAAA4zU/Ldj1FfzxnwkvgLvt18qQtm2ogKPkNKRYgCK8BGAsYHg/s0/2020-08-22.png",
+    "streamUrl": "https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8",
+    "category": "Undefined",
+    "status": "active",
+    "sourceConfidence": "candidate_from_m3u",
+    "needsLegalReview": true
+  },
+   {
+    "id": "tv-futuro-1080p-br",
+    "name": "TV Futuro (1080p)",
+    "country": "Brasil",
+    "countryCode": "BR",
+    "logo": "https://i.imgur.com/ebbKhAJ.png",
+    "streamUrl": "https://streaming03.zas.media:1936/tvfuturo/tvfuturo/playlist.m3u8",
+    "category": "General",
+    "status": "active",
+    "sourceConfidence": "candidate_from_m3u",
+    "needsLegalReview": true
+  },
   {
     "id": "red-ad-venir-internacional-bo",
     "name": "Red AD Venir Internacional",
