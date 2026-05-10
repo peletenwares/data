@@ -868,20 +868,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "listas-en-m3u-cl-cl",
-    "name": "+ Listas en M3U.CL",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://i2.paste.pics/84dae4a003b365e9b71ea1c50eb61c21.png",
-    "streamUrl": "https://scl.edge.grupoz.cl/transmision/live/playlist.m3u8",
-    "category": "Undefined",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:52:40Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "adn-40-mx",
     "name": "ADN 40",
     "country": "México",
