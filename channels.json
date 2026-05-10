@@ -4938,20 +4938,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "boas-novas-720p-br",
-    "name": "Boas Novas (720p)",
-    "country": "Brasil",
-    "countryCode": "BR",
-    "logo": "https://i.imgur.com/ZqhizdP.png",
-    "streamUrl": "https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8",
-    "category": "Undefined",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:56:44Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "bon-appetit-1080p-us",
     "name": "bon appétit (1080p)",
     "country": "Estados Unidos",
@@ -5327,20 +5313,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-02T23:57:03Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "canal-25-jundiai-404p-not-24-7-br",
-    "name": "Canal 25 Jundiaí (404p) [Not 24/7]",
-    "country": "Brasil",
-    "countryCode": "BR",
-    "logo": "https://i.imgur.com/7igGMwH.png",
-    "streamUrl": "https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8",
-    "category": "Undefined",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:57:05Z",
     "auditStatus": "working"
   },
   {
