@@ -1,7 +1,7 @@
 {
   "latestVersionCode": 18,
   "latestVersionName": "2.0.8",
-  "forceUpdate": false,
+  "forceUpdate": true,
   "playStoreUrl": "https://play.google.com/store/apps/details?id=com.peletenwares.tvenvivogratisonline",
   "message": {
     "es": "Hay una nueva versión disponible con mejoras de estabilidad y experiencia.",
