@@ -1,8 +1,8 @@
 {
   "featuredChannelId": "jovem-pan-news-jp-news-br",
-  "featuredCountries": ["BR", "CL", "AR", "MX", "ES"],
+  "featuredCountries": ["BR", "AR", "MX", "CL", "PE"],
   "featuredChannels": [
     "jovem-pan-news-jp-news-br",
-    "antofagasta-tv-cl"
+    "13-deportes-cl"
   ]
 }
