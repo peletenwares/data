@@ -1,8 +1,17 @@
 {
   "featuredChannelId": "jovem-pan-news-jp-news-br",
-  "featuredCountries": ["BR", "AR", "MX", "CL", "PE"],
+  "featuredCountries": [
+    "BR",
+    "AR",
+    "MX",
+    "CL",
+    "PE"
+  ],
   "featuredChannels": [
+    "sbt-interior-br",
     "jovem-pan-news-jp-news-br",
-    "13-deportes-cl"
+    "record-news-espirito-santo-br",
+    "tv-aparecida-br",
+    "tv-brasil-oeste-br"
   ]
 }
