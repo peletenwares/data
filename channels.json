@@ -308,20 +308,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "pucon-tv-cl",
-    "name": "Pucón TV",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://i.imgur.com/nO4cV3E.png",
-    "streamUrl": "https://pantera1-100gb-cl-movistar.dps.live/pucontv/pucontv.smil/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_trusted_technical",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:52:28Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "pudahuel-fm-cl",
     "name": "Pudahuel FM",
     "country": "Chile",
@@ -515,20 +501,6 @@
     "sourceConfidence": "candidate_trusted_technical",
     "needsLegalReview": true,
     "checkedAt": "2026-05-02T23:52:32Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "umag-tv-2-cl",
-    "name": "UMAG TV 2",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://lh3.googleusercontent.com/-0NppS8zHXRU/XbC2cN4qlAI/AAAAAAAArmY/g4gYZKyGhHglj_lyBKSaRw-tBMgzO0NmACK8BGAsYHg/s0/2019-10-23.png",
-    "streamUrl": "https://tls-cl.cdnz.cl/umag2/live/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_trusted_technical",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:52:33Z",
     "auditStatus": "working"
   },
   {
@@ -1036,20 +1008,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "canal-13-jujuy-ar",
-    "name": "Canal 13 Jujuy",
-    "country": "Argentina",
-    "countryCode": "AR",
-    "logo": "https://lh3.googleusercontent.com/-bSbxNgtv_2M/X4y7pC59aKI/AAAAAAAA6h8/opkxju3NzT4BiFnp2zXdnyaBfgOJ7LW-QCK8BGAsYHg/s0/2020-10-18.png",
-    "streamUrl": "https://genexservicios.com:19360/canal13jujuy/canal13jujuy.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:53:01Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "canal-21-tv-ar",
     "name": "Canal 21 TV",
     "country": "Argentina",
@@ -1396,20 +1354,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "tv-difusora-leste-br",
-    "name": "TV Difusora Leste",
-    "country": "Brasil",
-    "countryCode": "BR",
-    "logo": "https://i2.paste.pics/e993c5478d390ba3e41fbfe56c945ba8.png",
-    "streamUrl": "https://stream.amsolution.net.br:8443/live/60d0a8ea6b884/index.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:53:37Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "tv-sim-cachoeiro-br",
     "name": "TV Sim Cachoeiro",
     "country": "Brasil",
@@ -1477,20 +1421,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-02T23:53:42Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "canal-29-br",
-    "name": "Canal 29",
-    "country": "Brasil",
-    "countryCode": "BR",
-    "logo": "https://lh3.googleusercontent.com/-rqwv7VWv5MY/X0EdvriEGRI/AAAAAAAA42Q/dICId1HhEWs0HceSVwcd7e210pkv3SpjACK8BGAsYHg/s0/2020-08-22.png",
-    "streamUrl": "https://stmv1.srvif.com/canal29/canal29/playlist.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:53:44Z",
     "auditStatus": "working"
   },
   {
@@ -1872,34 +1802,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "emocion-tv-cl",
-    "name": "Emocion TV",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://i2.paste.pics/2337c738e62db5b6e2b573580e2d9e82.png",
-    "streamUrl": "https://v1.tustreaming.cl/emociontv/index.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:54:08Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "aysen-tv-cl",
-    "name": "Aysen TV",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://i2.paste.pics/f68f8bb46f486aec998bb476a60d4181.png",
-    "streamUrl": "http://v1.tustreaming.cl:80/aysentv/index.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:54:03Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "radio-estacion-arica-cl",
     "name": "Radio Estacion Arica",
     "country": "Chile",
@@ -1967,20 +1869,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-02T23:54:10Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "radio-fantasia-tv-cl",
-    "name": "Radio Fantasia TV",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://lh3.googleusercontent.com/-7Uf_S_1oEU8/XmV_Zz3S5cI/AAAAAAAAwsA/yYku6NdZFTk7c0a9AtwAOJBoh3a2UMnqQCK8BGAsYHg/s0/2020-03-08.png",
-    "streamUrl": "https://v2.tustreaming.cl/fantasiatv/index.m3u8",
-    "category": "Music",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:54:11Z",
     "auditStatus": "working"
   },
   {
@@ -3132,20 +3020,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "afrobeats-1080p-xx",
-    "name": "Afrobeats (1080p)",
-    "country": "Desconocido",
-    "countryCode": "XX",
-    "logo": "",
-    "streamUrl": "https://stream.ecable.tv/afrobeats/index.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:55:31Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "akaku-54-hawaii-1080p-us",
     "name": "Akaku 54 (Hawaii) (1080p)",
     "country": "Estados Unidos",
@@ -3591,20 +3465,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-02T23:55:44Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "alhaqeqa-aldawlia-1080p-jo",
-    "name": "Alhaqeqa Aldawlia (1080p)",
-    "country": "JO",
-    "countryCode": "JO",
-    "logo": "https://i.imgur.com/i5Kr4n2.png",
-    "streamUrl": "https://ghaasiflu.online/alhqeqa/index.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:55:45Z",
     "auditStatus": "working"
   },
   {
@@ -4952,20 +4812,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "brian-tv-720p-not-24-7-la",
-    "name": "Brian TV (720p) [Not 24/7]",
-    "country": "LA",
-    "countryCode": "LA",
-    "logo": "https://i.imgur.com/zG1WNgU.jpg",
-    "streamUrl": "https://livefta.malimarcdn.com/ftaedge00/briantv.sdp/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:56:47Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "bloomberg-tv-australia-270p-au",
     "name": "Bloomberg TV Australia (270p)",
     "country": "Australia",
@@ -5014,20 +4860,6 @@
     "countryCode": "US",
     "logo": "https://i.imgur.com/mbv2Cy2.png",
     "streamUrl": "https://cdn3.wowza.com/5/djRwZmQvTEJidmZD/burbank/G0240_009/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:56:51Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "bungo-tv-480p-not-24-7-id",
-    "name": "Bungo TV (480p) [Not 24/7]",
-    "country": "Indonesia",
-    "countryCode": "ID",
-    "logo": "https://i.imgur.com/OrCrtDA.png",
-    "streamUrl": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
     "category": "Entertainment",
     "status": "active",
     "sourceConfidence": "candidate_from_m3u",
@@ -6576,20 +6408,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "costa-noroeste-tv-720p-not-24-7-es",
-    "name": "Costa Noroeste TV (720p) [Not 24/7]",
-    "country": "España",
-    "countryCode": "ES",
-    "logo": "https://i.imgur.com/iM9AN6Z.png",
-    "streamUrl": "https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:57:59Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "dallas-cowboy-cheerleaders-240p-us",
     "name": "Dallas Cowboy Cheerleaders (240p)",
     "country": "Estados Unidos",
@@ -7794,20 +7612,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "fashiontv-czech-slovak-450p-not-24-7-fr",
-    "name": "FashionTV Czech&Slovak (450p) [Not 24/7]",
-    "country": "Francia",
-    "countryCode": "FR",
-    "logo": "https://i.imgur.com/7Bigo7u.png",
-    "streamUrl": "http://lb.streaming.sk/fashiontv/stream/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-02T23:59:06Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "faros-tv2-480p-geo-blocked-gr",
     "name": "Faros TV2 (480p) [Geo-blocked]",
     "country": "Grecia",
@@ -8676,20 +8480,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "hmong-tv-network-720p-vn",
-    "name": "Hmong TV Network (720p)",
-    "country": "VN",
-    "countryCode": "VN",
-    "logo": "https://i.imgur.com/yfGvM3K.png",
-    "streamUrl": "https://livefta.malimarcdn.com/ftaedge00/cvabroadcasting.stream/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:00:26Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "hkibc-hk",
     "name": "HKIBC",
     "country": "Hong Kong",
@@ -9121,20 +8911,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:00:44Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "inspira-tv-720p-not-24-7-id",
-    "name": "Inspira TV (720p) [Not 24/7]",
-    "country": "Indonesia",
-    "countryCode": "ID",
-    "logo": "https://i.imgur.com/xI1OebM.png",
-    "streamUrl": "https://inspiratv.siar.us/inspiratv/live/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:00:45Z",
     "auditStatus": "working"
   },
   {
@@ -10255,20 +10031,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:01:52Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "locall-406p-sk",
-    "name": "LocAll (406p)",
-    "country": "Eslovaquia",
-    "countryCode": "SK",
-    "logo": "https://i.imgur.com/i3NclvS.png",
-    "streamUrl": "http://tv.geniusnet.sk:8081/localltv/pl.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:01:59Z",
     "auditStatus": "working"
   },
   {
@@ -11742,20 +11504,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "newport-beach-television-720p-us",
-    "name": "Newport Beach Television (720p)",
-    "country": "Estados Unidos",
-    "countryCode": "US",
-    "logo": "https://i.imgur.com/wKSZn6x.png",
-    "streamUrl": "https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/newportbeach/G0064_003/playlist.m3u8",
-    "category": "Legislative",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:03:32Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "newsy-1080p-us",
     "name": "Newsy (1080p)",
     "country": "Estados Unidos",
@@ -11991,20 +11739,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:03:44Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "nos-pais-720p-not-24-7-cw",
-    "name": "Nos Païs (720p) [Not 24/7]",
-    "country": "CW",
-    "countryCode": "CW",
-    "logo": "https://i.imgur.com/jmYvx2s.jpg",
-    "streamUrl": "http://highvolume04.streampartner.nl/nos_pais_24_7/nos_pais_24_7/playlist.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:03:45Z",
     "auditStatus": "working"
   },
   {
@@ -13142,20 +12876,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "pompano-beach-web-streaming-pompano-beach-fl-720p-us",
-    "name": "Pompano Beach Web Streaming (Pompano Beach FL) (720p)",
-    "country": "Estados Unidos",
-    "countryCode": "US",
-    "logo": "https://i.imgur.com/Bv9OGrH.png",
-    "streamUrl": "https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/pompano/G0765_005/playlist.m3u8",
-    "category": "Legislative",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:06:29Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "port-st-lucie-psl-tv-port-st-lucie-fl-360p-us",
     "name": "Port St Lucie PSL TV (Port St Lucie FL) (360p)",
     "country": "Estados Unidos",
@@ -13279,20 +12999,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:06:32Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "ptl-television-network-1080p-us",
-    "name": "PTL Television Network (1080p)",
-    "country": "Estados Unidos",
-    "countryCode": "US",
-    "logo": "https://i.imgur.com/EhISpCd.png",
-    "streamUrl": "https://storage.sardius.media/archives/-KyMV-J0vDqnClcSXs8p/events/site_1a4721d3BA/playlist.m3u8",
-    "category": "Religious",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:06:35Z",
     "auditStatus": "working"
   },
   {
@@ -14819,20 +14525,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:08:48Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "sangaji-tv-720p-not-24-7-id",
-    "name": "Sangaji TV (720p) [Not 24/7]",
-    "country": "Indonesia",
-    "countryCode": "ID",
-    "logo": "https://i.imgur.com/GOuGjwr.png",
-    "streamUrl": "https://cdn.gunadarma.ac.id/streams/sangajitv/ingestsangajitv.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:08:46Z",
     "auditStatus": "working"
   },
   {
@@ -16586,20 +16278,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "torrance-citicable-torrance-ca-360p-us",
-    "name": "Torrance CitiCABLE (Torrance CA) (360p)",
-    "country": "Estados Unidos",
-    "countryCode": "US",
-    "logo": "https://i.imgur.com/Y1qRHnC.png",
-    "streamUrl": "https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/torrance/G0057_005/playlist.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:11:18Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "top-stories-by-newsy-720p-us",
     "name": "Top Stories by Newsy (720p)",
     "country": "Estados Unidos",
@@ -16653,20 +16331,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:11:21Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "transmedia-television-morelia-614p-not-24-7-mx",
-    "name": "Transmedia Televisión Morelia (614p) [Not 24/7]",
-    "country": "México",
-    "countryCode": "MX",
-    "logo": "https://i.imgur.com/kpffqTI.png",
-    "streamUrl": "http://streamingcws20.com:1935/tmtv/videotmtv/playlist.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:11:23Z",
     "auditStatus": "working"
   },
   {
@@ -17986,20 +17650,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "vacaville-channel-26-vacaville-ca-720p-us",
-    "name": "Vacaville Channel 26 (Vacaville CA) (720p)",
-    "country": "Estados Unidos",
-    "countryCode": "US",
-    "logo": "https://i.imgur.com/dvuGdxg.png",
-    "streamUrl": "https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/vacaville/G0228_002/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:13:48Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "v2beat-720p-not-24-7-gb",
     "name": "V2BEAT (720p) [Not 24/7]",
     "country": "Reino Unido",
@@ -18711,20 +18361,6 @@
     "sourceConfidence": "candidate_from_m3u",
     "needsLegalReview": true,
     "checkedAt": "2026-05-03T00:14:40Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "wolcott-governmental-tv-720p-wolcott-ct-us",
-    "name": "Wolcott Governmental TV (720p) (Wolcott CT)",
-    "country": "Estados Unidos",
-    "countryCode": "US",
-    "logo": "https://i.imgur.com/551SvZI.png",
-    "streamUrl": "https://5a5c57d042315.streamlock.net/live11704001/ngrp:government_all/playlist.m3u8",
-    "category": "Government",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:14:41Z",
     "auditStatus": "working"
   },
   {
@@ -19820,20 +19456,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "576p-ru-15",
-    "name": "ТК Алмазный край (576p)",
-    "country": "Rusia",
-    "countryCode": "RU",
-    "logo": "https://i.imgur.com/zErXTdF.png",
-    "streamUrl": "https://stream.almaz-media.tv:8080/hls/576.m3u8",
-    "category": "General",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:16:13Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "exclusiv-tv-576p-xx",
     "name": "ТНТ Exclusiv TV (576p)",
     "country": "Desconocido",
@@ -20856,20 +20478,6 @@
     "auditStatus": "working"
   },
   {
-    "id": "transmedia-tv-morelia-mx",
-    "name": "Transmedia TV Morelia",
-    "country": "México",
-    "countryCode": "MX",
-    "logo": "https://i2.paste.pics/b558d6fde606a2bf8105c2ba0134282d.png",
-    "streamUrl": "https://5ca3e84a76d30.streamlock.net:443/tmtv/videotmtv/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_from_m3u",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-03T00:23:43Z",
-    "auditStatus": "working"
-  },
-  {
     "id": "tv4-noticias-mx",
     "name": "TV4 Noticias",
     "country": "México",
@@ -21730,20 +21338,6 @@
     "countryCode": "CL",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/UChile_TV_logo_2020.png",
     "streamUrl": "https://pantera1-100gb-cl-movistar.dps.live/uchiletv/uchiletv.smil/playlist.m3u8",
-    "category": "Entertainment",
-    "status": "active",
-    "sourceConfidence": "candidate_trusted_technical",
-    "needsLegalReview": true,
-    "checkedAt": "2026-05-10T17:19:03Z",
-    "auditStatus": "working"
-  },
-  {
-    "id": "arica-tv-cl",
-    "name": "Arica TV",
-    "country": "Chile",
-    "countryCode": "CL",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Logo_de_Arica_TV.png/240px-Logo_de_Arica_TV.png",
-    "streamUrl": "https://envivo.arica.tv/hls/Live2025AricaTV.m3u8",
     "category": "Entertainment",
     "status": "active",
     "sourceConfidence": "candidate_trusted_technical",
