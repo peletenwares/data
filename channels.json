@@ -24536,7 +24536,7 @@
 "country": "Colombia",
 "countryCode": "CO",
 "logo": "",
-"streamUrl": "http://138.121.15.230:9002/CITY-TV/index.m3u8",
+"streamUrl": "http://138.186.23.7:8082/CITY/index.m3u8",
 "category": "Regional",
 "status": "active",
 "sourceConfidence": "low",
