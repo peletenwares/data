@@ -5,7 +5,7 @@
     "country": "Brasil",
     "countryCode": "BR",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/512px-Jovem_Pan_logo_2018.svg.png",
-    "streamUrl": "https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index.m3u8",
+    "streamUrl": "http://45.190.28.50/JP_NEWS/index.m3u8",
     "category": "News",
     "status": "active",
     "sourceConfidence": "candidate_trusted_technical",
