@@ -1,5 +1,19 @@
 [
   {
+  "id": "salsa-gorda-tv-co",
+  "name": "Salsa Gorda TV",
+  "country": "Colombia",
+  "countryCode": "CO",
+  "logo": "",
+  "streamUrl": "https://stmv1.voxtvhd.com.br/salsagorda/salsagorda/playlist.m3u8",
+  "category": "Music",
+  "status": "active",
+  "sourceConfidence": "candidate_trusted_technical",
+  "needsLegalReview": false,
+  "checkedAt": "2026-08-24T23:41:00Z",
+  "auditStatus": "working"
+},
+  {
     "id": "jovem-pan-news-jp-news-br",
     "name": "Jovem Pan News (JP News)",
     "country": "Brasil",
